@@ -1,0 +1,5 @@
+name: Example Action
+description: Test action fixture
+runs:
+  using: node20
+  main: dist/index.js

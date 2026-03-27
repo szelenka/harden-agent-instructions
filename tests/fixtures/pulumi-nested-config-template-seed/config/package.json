@@ -1,0 +1,9 @@
+{
+  "name": "pulumi-config-repo",
+  "private": true,
+  "scripts": {
+    "preview": "ts-node tools/preview.ts",
+    "deploy": "ts-node tools/deploy.ts",
+    "lint": "eslint tools --ext .ts"
+  }
+}

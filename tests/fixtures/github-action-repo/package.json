@@ -1,0 +1,15 @@
+{
+  "name": "github-action-repo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist",
+    "lint": "eslint src --ext .ts",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}

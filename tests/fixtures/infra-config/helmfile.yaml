@@ -1,0 +1,10 @@
+repositories:
+  - name: voicea
+    url: https://charts.example.invalid
+
+releases:
+  - name: ml-proxy
+    chart: ./charts/ml-proxy
+    namespace: voicea
+    values:
+      - environments/dev/values.yaml
