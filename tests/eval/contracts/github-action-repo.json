@@ -1,0 +1,22 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": ["npm run build", "npm run lint", "npm run test"],
+  "forbidden_commands": ["python -m pytest", "go test ./...", "cargo test"],
+  "required_paths": ["action.yml", "src/index.ts", "test/index.test.js"],
+  "required_paths_tier": "hard",
+  "required_phrases": ["github action"],
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "forbidden_prescriptions": ["api server", "web server", "express"],
+  "expected_status": {
+    "repo_tier": "small"
+  },
+  "expected_verification_source": "action.yml",
+  "forbidden_verification_sources": ["app/main.py", ".pre-commit-config.yaml"],
+  "required_done_when_phrases": ["build", "lint", "test"],
+  "required_done_when_tier": "hard",
+  "required_command_scope_pairs": [
+    {"command": "npm run build", "scope": ["action", "action.yml", "github action"]},
+    {"command": "npm run test", "scope": ["action", "action.yml", "github action"]}
+  ]
+}

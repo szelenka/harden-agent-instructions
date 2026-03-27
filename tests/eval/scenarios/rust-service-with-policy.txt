@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/rust-service-with-policy.
+
+This is a small Rust CLI repo with explicit fmt/lint/test policy surfaces in `Cargo.toml` and `rustfmt.toml`. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Acknowledge the repo-defined verification surface: `cargo test`, `cargo fmt --check`, and `cargo clippy -- -D warnings`.
+
+Return the audit summary when done.

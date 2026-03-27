@@ -1,0 +1,17 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "forbidden_commands": ["npm test", "cargo test"],
+  "required_paths": [
+    "services/billing/",
+    "services/gateway/",
+    "infra/"
+  ],
+  "required_paths_tier": "hard",
+  "required_phrases": ["zone", "billing", "gateway", "infra"],
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "forbidden_prescriptions": [],
+  "expected_status": {
+    "repo_tier": "small"
+  }
+}

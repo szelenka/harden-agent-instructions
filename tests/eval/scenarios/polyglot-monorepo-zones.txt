@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/polyglot-monorepo-zones.
+
+This is a polyglot monorepo with 3 operationally distinct zones: a Python billing service (services/billing/), a Go API gateway (services/gateway/), and Terraform infrastructure (infra/). Each zone has its own manifest, lock file, and CI job.
+
+The existing single-file AGENTS.md tries to cover all zones with zone-scoped headings. Determine whether this creates command ambiguity or budget pressure, and recommend or create zone-specific instruction files if warranted.
+
+Return the audit summary when done.

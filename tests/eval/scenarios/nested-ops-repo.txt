@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/nested-ops-repo.
+
+This is a small operations repo with a root `Makefile` and nested service `Makefile`s. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Preserve the root workflow and the focused subdirectory workflows instead of flattening them into one command list.
+
+Return the audit summary when done.

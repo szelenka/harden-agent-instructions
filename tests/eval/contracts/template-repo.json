@@ -1,0 +1,26 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": ["make render"],
+  "forbidden_commands": ["pytest", "npm test", "python app/main.py"],
+  "required_paths": ["cookiecutter.json", "hooks/post_gen_project.py", "template/{{project_slug}}/"],
+  "required_paths_tier": "hard",
+  "required_path_roles": [
+    {"path": "cookiecutter.json", "role": ["template", "scaffold", "cookiecutter"]},
+    {"path": "hooks/post_gen_project.py", "role": ["hook", "post-generation", "post generation"]},
+    {"path": "template/{{project_slug}}/", "role": ["template", "scaffold", "generated project"]}
+  ],
+  "required_path_roles_tier": "hard",
+  "required_phrases": ["template"],
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "forbidden_prescriptions": ["api server", "web server", "express"],
+  "expected_status": {
+    "repo_tier": "small"
+  },
+  "forbidden_verification_sources": ["app/main.py", "package.json", ".github/workflows/ci.yml"],
+  "required_done_when_phrases": ["render", "template"],
+  "required_done_when_tier": "hard",
+  "required_command_scope_pairs": [
+    {"command": "make render", "scope": ["template", "scaffold", "render"]}
+  ]
+}

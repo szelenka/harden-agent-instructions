@@ -1,0 +1,12 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": [["cargo", "make build", "make test"], ["clippy", "make lint", "cargo clippy"]],
+  "forbidden_commands": ["npm test", "pytest", "go test"],
+  "required_paths": [],
+  "required_phrases": ["rust", "cli"],
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "expected_status": {
+    "repo_tier": "small"
+  }
+}

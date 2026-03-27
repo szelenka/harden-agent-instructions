@@ -1,0 +1,18 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": ["cargo test", "cargo fmt --check", "cargo clippy -- -D warnings"],
+  "forbidden_commands": ["npm test", "python -m pytest", "go test ./..."],
+  "required_paths": ["Cargo.toml", "rustfmt.toml", "src/main.rs", "src/policy.rs", "tests/cli_test.rs"],
+  "required_paths_tier": "hard",
+  "required_path_roles": [
+    {"path": "src/main.rs", "role": ["entry point", "cli", "main"]},
+    {"path": "src/policy.rs", "role": ["policy", "logic", "validation"]},
+    {"path": "tests/cli_test.rs", "role": ["deterministic verification", "test", "verification"]}
+  ],
+  "required_path_roles_tier": "hard",
+  "required_done_when_phrases": ["cargo test", "cargo fmt --check", "cargo clippy"],
+  "required_done_when_tier": "hard",
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "forbidden_verification_sources": ["package.json", "pyproject.toml", ".github/workflows/ci.yml"]
+}

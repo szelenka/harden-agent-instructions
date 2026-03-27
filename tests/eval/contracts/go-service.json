@@ -1,0 +1,13 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": [["make test", "go test"], ["make lint", "make build", "go build"]],
+  "forbidden_commands": ["npm", "python", "poetry"],
+  "required_paths": [],
+  "required_phrases": ["go"],
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "forbidden_prescriptions": [],
+  "expected_status": {
+    "repo_tier": "small"
+  }
+}

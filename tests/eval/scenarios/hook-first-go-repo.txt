@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/hook-first-go-repo.
+
+This is a small Go repo where `.pre-commit-config.yaml` is the strongest operational truth. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Prefer the hook-backed verification commands over guessed local commands when local workflow evidence is thin.
+
+Return the audit summary when done.

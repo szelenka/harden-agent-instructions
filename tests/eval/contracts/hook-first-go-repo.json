@@ -1,0 +1,24 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": ["go test ./...", "go vet ./..."],
+  "forbidden_commands": ["npm test", "python -m pytest", "cargo test"],
+  "required_paths": [".pre-commit-config.yaml"],
+  "required_paths_tier": "hard",
+  "required_path_roles": [
+    {"path": ".pre-commit-config.yaml", "role": ["verification contract", "canonical verification source"]},
+    {"path": "service/handler.go", "role": ["runtime logic", "runtime", "handler"]},
+    {"path": "service/handler_test.go", "role": ["deterministic verification", "test", "verification"]}
+  ],
+  "required_path_roles_tier": "hard",
+  "required_phrases": ["pre-commit"],
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "expected_verification_source": ".pre-commit-config.yaml",
+  "forbidden_verification_sources": [".github/workflows/ci.yml", "Makefile", "package.json"],
+  "required_done_when_phrases": ["go test", "go vet"],
+  "required_done_when_tier": "hard",
+  "required_command_scope_pairs": [
+    {"command": "go test ./...", "scope": ["hook", "pre-commit"]},
+    {"command": "go vet ./...", "scope": ["hook", "pre-commit"]}
+  ]
+}

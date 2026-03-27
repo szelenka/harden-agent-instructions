@@ -1,0 +1,5 @@
+Audit the agent instruction files for the repository at tests/fixtures/weak-instructions.
+
+This is a small Go project with an existing AGENTS.md. Discover the repo structure, assess the instruction files against cold-start criteria and the rubric, fix the highest-priority issues, then verify your work.
+
+Return the audit summary when done.

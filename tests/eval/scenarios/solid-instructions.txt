@@ -1,0 +1,5 @@
+Audit the agent instruction files for the repository at tests/fixtures/solid-instructions.
+
+This is a small TypeScript project with an existing AGENTS.md. Discover the repo structure, assess the instruction files against cold-start criteria and the rubric, fix any issues found, then verify your work.
+
+Return the audit summary when done.

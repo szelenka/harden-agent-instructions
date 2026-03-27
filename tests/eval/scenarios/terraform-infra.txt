@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/terraform-infra.
+
+This is a small Terraform infrastructure repo with modules and environment-specific tfvars. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Use Terraform commands instead of application-level build commands.
+
+Return the audit summary when done.

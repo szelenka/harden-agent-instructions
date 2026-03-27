@@ -1,0 +1,13 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": [["docker"]],
+  "forbidden_commands": ["npm", "python", "go", "mvn", "make"],
+  "required_paths": [],
+  "required_phrases": ["docker"],
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "forbidden_prescriptions": [],
+  "expected_status": {
+    "repo_tier": "small"
+  }
+}

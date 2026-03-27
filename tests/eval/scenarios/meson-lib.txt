@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/meson-lib.
+
+This is a small C library using the Meson build system. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Use Meson commands instead of inventing cmake, make, or gcc workflows.
+
+Return the audit summary when done.

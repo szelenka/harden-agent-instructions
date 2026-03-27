@@ -1,0 +1,28 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": ["npm run build", "npm run test", "npm run lint"],
+  "required_paths": [
+    "src/routes/",
+    "src/services/",
+    "src/validators/",
+    "src/internal/",
+    "prisma/schema.prisma"
+  ],
+  "required_paths_tier": "hard",
+  "required_path_roles": [
+    {"path": "src/routes/", "role": ["http handlers", "handlers", "route"]},
+    {"path": "src/services/", "role": ["business logic", "service"]},
+    {"path": "src/validators/", "role": ["zod", "schema", "validator"]},
+    {"path": "src/internal/", "role": ["shared infra", "infra", "internal"]},
+    {"path": "prisma/schema.prisma", "role": ["data model", "schema", "prisma"]}
+  ],
+  "required_path_roles_tier": "hard",
+  "required_sections": ["## Verification (Done Checklist)"],
+  "required_done_when_phrases": ["npm run check", "prisma migrate dev --create-only"],
+  "required_done_when_tier": "hard",
+  "expected_status": {
+    "cold-start ready": "yes",
+    "repo tier": "small"
+  }
+}

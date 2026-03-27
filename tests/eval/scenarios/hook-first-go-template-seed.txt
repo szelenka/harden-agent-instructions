@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/hook-first-go-template-seed.
+
+This is a small Go repo where `AGENTS.md` was seeded from a generic language template, but `.pre-commit-config.yaml` is the strongest operational truth. Discover the repo structure, assess whether the existing instruction file is cold-start ready, fix any issues, then verify your work.
+
+Prefer the hook-backed verification commands over the generic Go-template defaults when local workflow evidence is thin.
+
+Return the audit summary when done.

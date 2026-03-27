@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/workflow-first-repo.
+
+This is a small Python repo where `.github/workflows/ci.yml` is the strongest operational truth. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Prefer the workflow-backed verification commands over guessed local commands when they conflict or when local workflow evidence is thin.
+
+Return the audit summary when done.

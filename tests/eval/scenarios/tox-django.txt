@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/tox-django.
+
+This is a small Django project with tox.ini managing test, lint, and typecheck environments. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Use tox as the canonical test runner instead of bare pytest or manage.py test.
+
+Return the audit summary when done.

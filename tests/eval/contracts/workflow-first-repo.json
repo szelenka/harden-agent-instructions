@@ -1,0 +1,25 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": ["python -m pytest", "ruff check"],
+  "forbidden_commands": ["npm test", "go test ./...", "cargo test"],
+  "required_paths": [".github/workflows/ci.yml", "app/main.py"],
+  "required_paths_tier": "hard",
+  "required_path_roles": [
+    {"path": ".github/workflows/ci.yml", "role": "verification contract"},
+    {"path": "app/main.py", "role": ["entry point", "application", "app"]}
+  ],
+  "required_path_roles_tier": "hard",
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "expected_status": {
+    "repo_tier": "small"
+  },
+  "expected_verification_source": ".github/workflows/ci.yml",
+  "forbidden_verification_sources": ["package.json", "Makefile", ".pre-commit-config.yaml"],
+  "required_done_when_phrases": ["pytest", "ruff"],
+  "required_done_when_tier": "hard",
+  "required_command_scope_pairs": [
+    {"command": "python -m pytest", "scope": "workflow"},
+    {"command": "ruff check .", "scope": "workflow"}
+  ]
+}

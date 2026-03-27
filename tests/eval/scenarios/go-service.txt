@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/go-service.
+
+This is a small Go service repo with a root Makefile and multiple command packages. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Use Go-native and Makefile-based verification guidance instead of inventing npm or Python workflows.
+
+Return the audit summary when done.

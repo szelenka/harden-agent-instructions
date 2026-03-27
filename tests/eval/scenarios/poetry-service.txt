@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/poetry-service.
+
+This is a small Python Flask service managed by Poetry with a root Makefile wrapping Poetry commands. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Use Makefile targets as the canonical commands rather than invoking Poetry directly.
+
+Return the audit summary when done.

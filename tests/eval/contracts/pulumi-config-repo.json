@@ -1,0 +1,16 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": [
+    ["npm run lint", "npm --prefix config run lint"],
+    ["npm run preview", "npm --prefix config run preview"]
+  ],
+  "forbidden_commands": ["pytest", "pip install", "cargo test"],
+  "required_paths": ["Pulumi.yaml", "config/package.json", "preview.ts"],
+  "required_paths_tier": "hard",
+  "required_phrases": ["config/"],
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "expected_status": {
+    "repo_tier": "small"
+  }
+}

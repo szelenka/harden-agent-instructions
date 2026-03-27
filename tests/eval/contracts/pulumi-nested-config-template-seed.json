@@ -1,0 +1,30 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": [
+    ["npm run lint", "npm --prefix config run lint"],
+    ["npm run preview", "npm --prefix config run preview"]
+  ],
+  "forbidden_commands": ["pytest", "pip install", "cargo test", "npm test", "npm ci", "npm run build", "npm run typecheck"],
+  "required_paths": ["Pulumi.yaml", "config/package.json", "config/tools/preview.ts"],
+  "required_paths_tier": "hard",
+  "required_path_roles": [
+    {"path": "Pulumi.yaml", "role": ["stack runtime contract", "stack", "pulumi"]},
+    {"path": "config/package.json", "role": ["operational scripts", "scripts", "verification source"]},
+    {"path": "config/tools/preview.ts", "role": ["preview workflow", "preview"]}
+  ],
+  "required_path_roles_tier": "hard",
+  "required_phrases": ["config/"],
+  "forbidden_phrases": ["follow best practices", "be careful", "branch naming: `feature/*`, `fix/*`, `chore/*`", "conventional commits"],
+  "expected_status": {
+    "repo tier": "small",
+    "cold-start ready": "no"
+  },
+  "expected_verification_source": "config/package.json",
+  "required_done_when_phrases": ["config", "preview", "lint"],
+  "required_done_when_tier": "hard",
+  "required_command_scope_pairs": [
+    {"command": ["npm run lint", "npm --prefix config run lint"], "scope": ["config/", "config", "nested"]},
+    {"command": ["npm run preview", "npm --prefix config run preview"], "scope": ["config/", "config", "nested"]}
+  ]
+}

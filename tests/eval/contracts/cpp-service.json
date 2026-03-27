@@ -1,0 +1,12 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": [["cmake", "make build", "make configure"], ["ctest", "make test"]],
+  "forbidden_commands": ["npm test", "pytest", "go test", "cargo test"],
+  "required_paths": [],
+  "required_phrases": ["clang-tidy"],
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "expected_status": {
+    "repo_tier": "small"
+  }
+}

@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/pulumi-nested-config-template-seed.
+
+This is a small infra repo where `AGENTS.md` was seeded from a generic TypeScript template, but `Pulumi.yaml` lives at the root and the main Node workflow is nested under `config/`. Discover the repo structure, assess whether the existing instruction file is cold-start ready, fix any issues, then verify your work.
+
+Preserve the nested working-directory-sensitive workflow instead of the generic root-level Node template defaults.
+
+Return the audit summary when done.

@@ -1,0 +1,5 @@
+Audit the agent instruction files for the repository at tests/fixtures/rust-cli.
+
+This is a small Rust CLI project. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues by creating or editing instruction files, then verify your work.
+
+Return the audit summary when done.

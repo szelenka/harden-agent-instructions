@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/pulumi-config-repo.
+
+This is a small infra repo with `Pulumi.yaml` at the root and the main Node workflow nested under `config/`. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Preserve the nested working-directory-sensitive workflow instead of pretending there is a flat root package.json.
+
+Return the audit summary when done.

@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/sparse-git-repo.
+
+This is a small git-backed repo with no build manifest and no trustworthy verification commands. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Do not invent build commands. Explicitly note that verification is limited.
+
+Return the audit summary when done.

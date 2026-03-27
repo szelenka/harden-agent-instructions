@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/infra-config.
+
+This is a small infrastructure/config repo with a root Makefile and Helm/Helmfile deployment files. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Treat this as config/infrastructure, not as an application codebase. Use render/diff/lint as the verification path.
+
+Return the audit summary when done.

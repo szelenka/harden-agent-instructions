@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/dockerfile-sparse-repo.
+
+This is a small repo whose strongest signal is a Dockerfile with no stronger build manifest. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Stay conservative — Docker is the only verification signal. Do not invent application-level build commands.
+
+Return the audit summary when done.

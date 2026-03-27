@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/template-repo.
+
+This is a small scaffold/template repo with placeholder paths. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Treat placeholder paths as templates rather than as already-materialized runtime code.
+
+Return the audit summary when done.

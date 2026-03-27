@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/makefile-only-mixed.
+
+This is a small repo with a root Makefile but no language-specific manifest. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+The Makefile is the only workflow surface. Do not guess the repo language or invent package manager commands.
+
+Return the audit summary when done.

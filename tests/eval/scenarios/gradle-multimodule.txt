@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/gradle-multimodule.
+
+This is a multi-module Gradle repo with 3 subprojects (app, core, api) sharing one build system (Gradle), one runtime (Java 17), and one CI job. All modules are built with a single `./gradlew build` command.
+
+Determine the correct instruction file placement. Do NOT create zone-specific instruction files for Gradle subprojects that share a root build system.
+
+Return the audit summary when done.

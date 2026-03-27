@@ -1,0 +1,19 @@
+{
+  "must_create_files": ["AGENTS.md"],
+  "must_not_modify_paths": ["EXPECTED.md"],
+  "required_commands": [
+    ["./gradlew build", "./gradlew test", "gradlew build", "gradlew test"]
+  ],
+  "forbidden_commands": ["npm test", "pytest", "cargo test"],
+  "required_paths": [
+    "build.gradle.kts",
+    "settings.gradle.kts"
+  ],
+  "required_phrases": ["gradle"],
+  "forbidden_phrases": ["follow best practices", "be careful"],
+  "forbidden_prescriptions": [],
+  "expected_status": {
+    "repo_tier": "small"
+  },
+  "required_done_when_phrases": ["build", "test"]
+}

@@ -1,0 +1,7 @@
+Audit the agent instruction files for the repository at tests/fixtures/github-action-repo.
+
+This is a small GitHub Action repo with `action.yml` and `package.json`. Discover the repo structure, assess whether instruction files exist and are cold-start ready, fix any issues, then verify your work.
+
+Treat `action.yml` as the runtime contract instead of assuming this is a generic web or API app.
+
+Return the audit summary when done.
