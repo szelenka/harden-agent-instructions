@@ -1,0 +1,92 @@
+{
+  "_meta": {
+    "description": "Compact variance baseline for regression detection",
+    "format": "v2"
+  },
+  "scenarios": {
+    "cpp-service": {
+      "stability": 0.774,
+      "hard_stability": 1.0,
+      "soft_stability": 0.125,
+      "num_runs": 5,
+      "source_run": "2026-03-24T01-55-40"
+    },
+    "github-action-repo": {
+      "stability": 0.846,
+      "hard_stability": 0.853,
+      "soft_stability": 0.8,
+      "num_runs": 5,
+      "source_run": "2026-03-24T01-46-55"
+    },
+    "nested-ops-repo": {
+      "stability": 0.953,
+      "hard_stability": 0.947,
+      "soft_stability": 1.0,
+      "num_runs": 5,
+      "source_run": "2026-03-24T01-46-55"
+    },
+    "pulumi-config-repo": {
+      "stability": 1.0,
+      "hard_stability": 1.0,
+      "soft_stability": 1.0,
+      "num_runs": 5,
+      "source_run": "2026-03-24T01-46-55"
+    },
+    "rust-cli": {
+      "stability": 0.759,
+      "hard_stability": 0.909,
+      "soft_stability": 0.286,
+      "num_runs": 5,
+      "source_run": "2026-03-24T01-55-40"
+    },
+    "solid-instructions": {
+      "stability": 0.625,
+      "hard_stability": 0.769,
+      "soft_stability": 0.455,
+      "num_runs": 5,
+      "source_run": "2026-03-24T01-40-25"
+    },
+    "template-repo": {
+      "stability": 0.889,
+      "hard_stability": 0.871,
+      "soft_stability": 1.0,
+      "num_runs": 5,
+      "source_run": "2026-03-24T01-46-55"
+    },
+    "weak-instructions": {
+      "stability": 0.818,
+      "hard_stability": 0.875,
+      "soft_stability": 0.667,
+      "num_runs": 5,
+      "source_run": "2026-03-24T02-26-29"
+    },
+    "workflow-first-repo": {
+      "stability": 0.824,
+      "hard_stability": 0.821,
+      "soft_stability": 0.833,
+      "num_runs": 5,
+      "source_run": "2026-03-24T01-40-25"
+    },
+    "hook-first-go-repo": {
+      "stability": 1.0,
+      "hard_stability": 1.0,
+      "soft_stability": 1.0,
+      "num_runs": 5,
+      "source_run": "runs"
+    },
+    "hook-first-go-template-seed": {
+      "stability": 1.0,
+      "hard_stability": 1.0,
+      "soft_stability": 1.0,
+      "num_runs": 5,
+      "source_run": "runs"
+    },
+    "rust-service-with-policy": {
+      "stability": 1.0,
+      "hard_stability": 1.0,
+      "soft_stability": 1.0,
+      "num_runs": 5,
+      "source_run": "runs"
+    }
+  }
+}
