@@ -2,6 +2,16 @@
 
 Works best with high-capability models like Claude Opus or GPT-5.4.
 
+## Table of Contents
+
+- [Claude Code](#claude-code)
+- [Codex](#codex)
+- [Cursor](#cursor)
+- [Gemini](#gemini)
+- [GitHub Copilot](#github-copilot)
+- [Other Agents](#other-agents)
+- [Windsurf](#windsurf)
+
 ## Claude Code
 
 Official skills docs: <https://code.claude.com/docs/en/skills>
