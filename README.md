@@ -34,7 +34,7 @@ For more examples, see [`references/GOLDEN_TASKS.md`](skills/harden-agent-instru
 
 ## Installation
 
-See [INSTALL.md](INSTALL.md) for setup instructions across Claude Code, Cursor, Codex, Windsurf, OpenCode, Gemini, and other agents.
+See [INSTALL.md](INSTALL.md) for setup instructions across Claude Code, Cursor, Codex, GitHub Copilot, Windsurf, OpenCode, Gemini, and other agents.
 
 ## Usage
 

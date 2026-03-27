@@ -45,6 +45,29 @@ Verify in `Cursor Settings -> Rules`: the skill should appear under `Agent Decid
 Native team marketplace flow from GitHub:
 Admins can import this GitHub repo under `Dashboard -> Settings -> Plugins -> Team Marketplaces -> Import`. The checked-in `.cursor-plugin/plugin.json` is the plugin manifest for that flow.
 
+## GitHub Copilot
+
+Official skills docs: <https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-skills>
+
+No native GitHub-repo installer or marketplace import for skills is documented in the current GitHub Copilot skills docs. GitHub documents directory-based skill discovery instead.
+
+GitHub Copilot discovers project skills from `.github/skills/` or `.claude/skills/`, and personal skills from `~/.copilot/skills/` or `~/.claude/skills/`. This repo already ships a Claude-compatible shim in `.claude/skills/harden-agent-instructions/SKILL.md`, so the simplest install is to clone the repo and link that checked-in skill directory into your personal Copilot skills directory.
+
+```bash
+git clone https://github.com/szelenka/harden-agent-instructions.git ~/harden-agent-instructions
+mkdir -p ~/.copilot/skills
+ln -s ~/harden-agent-instructions/skills/harden-agent-instructions/ ~/.copilot/skills/harden-agent-instructions
+```
+
+If you want to try it only in one repository, link or copy the same checked-in directory into that repo's `.github/skills/` or `.claude/skills/` directory instead:
+
+```bash
+mkdir -p .github/skills
+ln -s /path/to/harden-agent-instructions/.claude/skills/harden-agent-instructions .github/skills/harden-agent-instructions
+```
+
+Verify by opening Copilot coding agent in a repo and asking it to audit or improve an instruction file such as `AGENTS.md` or `copilot-instructions.md`. The GitHub docs require `SKILL.md` to live inside the skill directory; this repo's checked-in shim already satisfies that requirement.
+
 ## Codex
 
 Official docs: <https://developers.openai.com/codex/skills>
@@ -52,10 +75,10 @@ Official docs: <https://developers.openai.com/codex/skills>
 Native GitHub install:
 
 ```bash
-$skill-installer https://github.com/szelenka/harden-agent-instructions
+$skill-installer https://github.com/szelenka/harden-agent-instructions/tree/main/skills/harden-agent-instructions
 ```
 
-There is no separate marketplace flow documented in the current Codex skills docs. See [.codex/INSTALL.md](.codex/INSTALL.md) for the repo-specific install flow.
+Verify: `$harden-agent-instructions` should be available, or Codex should load it automatically for instruction-audit tasks.
 
 ## Windsurf
 
@@ -68,10 +91,10 @@ Windsurf discovers skills from workspace `.windsurf/skills/`, user `~/.codeium/w
 ```bash
 git clone https://github.com/szelenka/harden-agent-instructions.git ~/harden-agent-instructions
 mkdir -p ~/.codeium/windsurf/skills
-ln -s ~/harden-agent-instructions/.windsurf/skills/harden-agent-instructions ~/.codeium/windsurf/skills/harden-agent-instructions
+ln -s ~/harden-agent-instructions/skills/harden-agent-instructions/ ~/.codeium/windsurf/skills/harden-agent-instructions
 ```
 
-Verify in Windsurf's Rules or Skills UI that `harden-agent-instructions` is discovered.
+Verify in Windsurf's Rules or Skills UI that `@harden-agent-instructions` is discovered.
 
 ## OpenCode
 
