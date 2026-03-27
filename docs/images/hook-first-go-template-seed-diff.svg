@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1808" viewBox="0 0 1440 1808" role="img" aria-labelledby="title desc">
+<title id="title">hook-first-go-template-seed side-by-side diff</title>
+<desc id="desc">A side-by-side diff of hook-first-go-template-seed AGENTS.md before and after hardening. Removed lines appear red on the left, added lines green on the right.</desc>
+<rect width="1440" height="1808" fill="#0d1117"/>
+<text x="40" y="46" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26" font-weight="700">hook-first-go-template-seed: side-by-side diff</text>
+<text x="40" y="76" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">source: generated from fixture AGENTS.md (or empty baseline) and hardened output</text>
+<rect x="40" y="110" width="670" height="1658" rx="10" fill="#161b22" stroke="#30363d"/>
+<text x="54" y="96" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">Before (hook-first-go-template-seed/AGENTS.md)</text>
+<rect x="730" y="110" width="670" height="1658" rx="10" fill="#161b22" stroke="#30363d"/>
+<text x="744" y="96" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">After (hardened by skill)</text>
+<rect x="41" y="120" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="138" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">1</text>
+<text x="96.0" y="138" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"># AI Agent Instructions - Go Project</text>
+<rect x="731" y="120" width="668" height="26" fill="#12261e"/>
+<text x="764" y="138" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">1</text>
+<text x="786.0" y="138" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"># AGENTS.md</text>
+<rect x="41" y="146" width="668" height="26" fill="#161b22"/>
+<text x="74" y="164" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">2</text>
+<rect x="731" y="146" width="668" height="26" fill="#161b22"/>
+<text x="764" y="164" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">2</text>
+<rect x="41" y="172" width="668" height="52" fill="#2d1215"/>
+<text x="74" y="190" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">3</text>
+<text x="96.0" y="190" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">This file was seeded from a generic Go template and may nee</text>
+<text x="96.0" y="216" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">d repository-specific tightening.</text>
+<rect x="731" y="172" width="668" height="52" fill="#12261e"/>
+<text x="764" y="190" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">3</text>
+<text x="786.0" y="190" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">## Hard Rules</text>
+<rect x="41" y="224" width="668" height="26" fill="#161b22"/>
+<text x="74" y="242" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">4</text>
+<rect x="731" y="224" width="668" height="26" fill="#161b22"/>
+<text x="764" y="242" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">4</text>
+<rect x="41" y="250" width="668" height="52" fill="#2d1215"/>
+<text x="74" y="268" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">5</text>
+<text x="96.0" y="268" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">## 1. Commands (Run First)</text>
+<rect x="731" y="250" width="668" height="52" fill="#12261e"/>
+<text x="764" y="268" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">5</text>
+<text x="786.0" y="268" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- Treat `.pre-commit-config.yaml` as the verification contr</text>
+<text x="786.0" y="294" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">act for this repo.</text>
+<rect x="41" y="302" width="668" height="78" fill="#161b22"/>
+<rect x="731" y="302" width="668" height="78" fill="#12261e"/>
+<text x="764" y="320" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">6</text>
+<text x="786.0" y="320" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- Use the hook-backed checks that exist in the repo. Do not</text>
+<text x="786.0" y="346" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"> add `golangci-lint` or other lint steps unless the repo is</text>
+<text x="786.0" y="372" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"> updated to enforce them.</text>
+<rect x="41" y="380" width="668" height="52" fill="#161b22"/>
+<rect x="731" y="380" width="668" height="52" fill="#12261e"/>
+<text x="764" y="398" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">7</text>
+<text x="786.0" y="398" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- Ask before introducing a new dependency, changing `go.mod</text>
+<text x="786.0" y="424" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">`, or relaxing verification rules.</text>
+<rect x="41" y="432" width="668" height="52" fill="#161b22"/>
+<rect x="731" y="432" width="668" height="52" fill="#12261e"/>
+<text x="764" y="450" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">8</text>
+<text x="786.0" y="450" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- Ask before destructive git actions, networked actions, or</text>
+<text x="786.0" y="476" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"> externally visible changes.</text>
+<rect x="41" y="484" width="668" height="78" fill="#161b22"/>
+<rect x="731" y="484" width="668" height="78" fill="#12261e"/>
+<text x="764" y="502" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">9</text>
+<text x="786.0" y="502" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- When you discover a repo-wide convention or workflow corr</text>
+<text x="786.0" y="528" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">ection that is not obvious from the tree, update this file </text>
+<text x="786.0" y="554" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">in the same change.</text>
+<rect x="41" y="562" width="668" height="26" fill="#161b22"/>
+<text x="74" y="580" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">6</text>
+<rect x="731" y="562" width="668" height="26" fill="#161b22"/>
+<text x="764" y="580" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">10</text>
+<rect x="41" y="588" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="606" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">7</text>
+<text x="96.0" y="606" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">Use the repository&#x27;s Go workflow consistently.</text>
+<rect x="731" y="588" width="668" height="26" fill="#12261e"/>
+<text x="764" y="606" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">11</text>
+<text x="786.0" y="606" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">## Commands</text>
+<rect x="41" y="614" width="668" height="26" fill="#161b22"/>
+<text x="74" y="632" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">8</text>
+<rect x="731" y="614" width="668" height="26" fill="#161b22"/>
+<text x="764" y="632" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">12</text>
+<rect x="41" y="640" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="658" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">9</text>
+<text x="96.0" y="658" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">| Task | Command |</text>
+<rect x="731" y="640" width="668" height="26" fill="#12261e"/>
+<text x="764" y="658" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">13</text>
+<text x="786.0" y="658" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">```sh</text>
+<rect x="41" y="666" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="684" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">10</text>
+<text x="96.0" y="684" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">| --- | --- |</text>
+<rect x="731" y="666" width="668" height="26" fill="#12261e"/>
+<text x="764" y="684" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">14</text>
+<text x="786.0" y="684" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"># format</text>
+<rect x="41" y="692" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="710" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">11</text>
+<text x="96.0" y="710" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">| Install tools | `go install ./...` |</text>
+<rect x="731" y="692" width="668" height="26" fill="#12261e"/>
+<text x="764" y="710" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">15</text>
+<text x="786.0" y="710" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">gofmt -w .</text>
+<rect x="41" y="718" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="736" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">12</text>
+<text x="96.0" y="736" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">| Run tests | `go test ./...` |</text>
+<rect x="731" y="718" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="744" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="762" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">13</text>
+<text x="96.0" y="762" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">| Run lint | `golangci-lint run` |</text>
+<rect x="731" y="744" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="770" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="788" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">14</text>
+<text x="96.0" y="788" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">| Format | `gofmt -w .` |</text>
+<rect x="731" y="770" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="796" width="668" height="26" fill="#161b22"/>
+<text x="74" y="814" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">15</text>
+<rect x="731" y="796" width="668" height="26" fill="#161b22"/>
+<text x="764" y="814" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">16</text>
+<rect x="41" y="822" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="840" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">16</text>
+<text x="96.0" y="840" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">## 2. Agent Persona and Scope</text>
+<rect x="731" y="822" width="668" height="26" fill="#12261e"/>
+<text x="764" y="840" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">17</text>
+<text x="786.0" y="840" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"># verification contract from .pre-commit-config.yaml</text>
+<rect x="41" y="848" width="668" height="26" fill="#161b22"/>
+<rect x="731" y="848" width="668" height="26" fill="#12261e"/>
+<text x="764" y="866" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">18</text>
+<text x="786.0" y="866" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">go test ./...</text>
+<rect x="41" y="874" width="668" height="26" fill="#161b22"/>
+<rect x="731" y="874" width="668" height="26" fill="#12261e"/>
+<text x="764" y="892" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">19</text>
+<text x="786.0" y="892" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">go vet ./...</text>
+<rect x="41" y="900" width="668" height="26" fill="#161b22"/>
+<rect x="731" y="900" width="668" height="26" fill="#12261e"/>
+<text x="764" y="918" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">20</text>
+<text x="786.0" y="918" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">```</text>
+<rect x="41" y="926" width="668" height="26" fill="#161b22"/>
+<text x="74" y="944" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">17</text>
+<rect x="731" y="926" width="668" height="26" fill="#161b22"/>
+<text x="764" y="944" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">21</text>
+<rect x="41" y="952" width="668" height="78" fill="#2d1215"/>
+<text x="74" y="970" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">18</text>
+<text x="96.0" y="970" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">You are the Go engineering assistant for `hook-first-go-rep</text>
+<text x="96.0" y="996" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">o`.</text>
+<rect x="731" y="952" width="668" height="78" fill="#12261e"/>
+<text x="764" y="970" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">22</text>
+<text x="786.0" y="970" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">There is no separate build command codified in this repo. U</text>
+<text x="786.0" y="996" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">se the verification commands above as the required local ga</text>
+<text x="786.0" y="1022" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">te.</text>
+<rect x="41" y="1030" width="668" height="26" fill="#161b22"/>
+<text x="74" y="1048" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">19</text>
+<rect x="731" y="1030" width="668" height="26" fill="#161b22"/>
+<text x="764" y="1048" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">23</text>
+<rect x="41" y="1056" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1074" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">20</text>
+<text x="96.0" y="1074" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">Definition of done:</text>
+<rect x="731" y="1056" width="668" height="26" fill="#12261e"/>
+<text x="764" y="1074" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">24</text>
+<text x="786.0" y="1074" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">## Key Paths</text>
+<rect x="41" y="1082" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1100" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">21</text>
+<text x="96.0" y="1100" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">1. Requested behavior implemented.</text>
+<rect x="731" y="1082" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="1108" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1126" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">22</text>
+<text x="96.0" y="1126" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">2. Tests and lint pass.</text>
+<rect x="731" y="1108" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="1134" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1152" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">23</text>
+<text x="96.0" y="1152" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">3. Updated docs/config for behavior changes.</text>
+<rect x="731" y="1134" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="1160" width="668" height="26" fill="#161b22"/>
+<text x="74" y="1178" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">24</text>
+<rect x="731" y="1160" width="668" height="26" fill="#161b22"/>
+<text x="764" y="1178" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">25</text>
+<rect x="41" y="1186" width="668" height="52" fill="#2d1215"/>
+<text x="74" y="1204" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">25</text>
+<text x="96.0" y="1204" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">## 3. Repository Knowledge</text>
+<rect x="731" y="1186" width="668" height="52" fill="#12261e"/>
+<text x="764" y="1204" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">26</text>
+<text x="786.0" y="1204" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- `./.pre-commit-config.yaml` — canonical verification sour</text>
+<text x="786.0" y="1230" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">ce</text>
+<rect x="41" y="1238" width="668" height="26" fill="#161b22"/>
+<rect x="731" y="1238" width="668" height="26" fill="#12261e"/>
+<text x="764" y="1256" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">27</text>
+<text x="786.0" y="1256" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- `./go.mod` — module path and Go version (`go 1.22`)</text>
+<rect x="41" y="1264" width="668" height="26" fill="#161b22"/>
+<rect x="731" y="1264" width="668" height="26" fill="#12261e"/>
+<text x="764" y="1282" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">28</text>
+<text x="786.0" y="1282" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- `./service/handler.go` — production behavior</text>
+<rect x="41" y="1290" width="668" height="52" fill="#161b22"/>
+<rect x="731" y="1290" width="668" height="52" fill="#12261e"/>
+<text x="764" y="1308" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">29</text>
+<text x="786.0" y="1308" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- `./service/handler_test.go` — unit test coverage for `ser</text>
+<text x="786.0" y="1334" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">vice`</text>
+<rect x="41" y="1342" width="668" height="26" fill="#161b22"/>
+<text x="74" y="1360" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">26</text>
+<rect x="731" y="1342" width="668" height="26" fill="#161b22"/>
+<text x="764" y="1360" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">30</text>
+<rect x="41" y="1368" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1386" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">27</text>
+<text x="96.0" y="1386" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- `service/`: production code.</text>
+<rect x="731" y="1368" width="668" height="26" fill="#12261e"/>
+<text x="764" y="1386" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">31</text>
+<text x="786.0" y="1386" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">## Done-When Checklist</text>
+<rect x="41" y="1394" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1412" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">28</text>
+<text x="96.0" y="1412" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- `service/handler_test.go`: tests.</text>
+<rect x="731" y="1394" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="1420" width="668" height="26" fill="#161b22"/>
+<text x="74" y="1438" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">29</text>
+<rect x="731" y="1420" width="668" height="26" fill="#161b22"/>
+<text x="764" y="1438" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">32</text>
+<rect x="41" y="1446" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1464" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">30</text>
+<text x="96.0" y="1464" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">## 4. Git Workflow</text>
+<rect x="731" y="1446" width="668" height="26" fill="#12261e"/>
+<text x="764" y="1464" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">33</text>
+<text x="786.0" y="1464" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- Requested behavior is implemented in `service/`.</text>
+<rect x="41" y="1472" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1490" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">31</text>
+<rect x="731" y="1472" width="668" height="26" fill="#12261e"/>
+<text x="764" y="1490" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">34</text>
+<text x="786.0" y="1490" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- `gofmt -w .` has been applied when Go files changed.</text>
+<rect x="41" y="1498" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1516" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">32</text>
+<text x="96.0" y="1516" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- Branch naming: `feature/*`, `fix/*`, `chore/*`.</text>
+<rect x="731" y="1498" width="668" height="26" fill="#12261e"/>
+<text x="764" y="1516" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">35</text>
+<text x="786.0" y="1516" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- `go test ./...` passes.</text>
+<rect x="41" y="1524" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1542" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">33</text>
+<text x="96.0" y="1542" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- Commit format: conventional commits.</text>
+<rect x="731" y="1524" width="668" height="26" fill="#12261e"/>
+<text x="764" y="1542" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">36</text>
+<text x="786.0" y="1542" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- `go vet ./...` passes.</text>
+<rect x="41" y="1550" width="668" height="52" fill="#2d1215"/>
+<text x="74" y="1568" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">34</text>
+<rect x="731" y="1550" width="668" height="52" fill="#12261e"/>
+<text x="764" y="1568" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">37</text>
+<text x="786.0" y="1568" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- `AGENTS.md` is updated when repo-wide agent workflow expe</text>
+<text x="786.0" y="1594" fill="#56d364" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">ctations change.</text>
+<rect x="41" y="1602" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1620" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">35</text>
+<text x="96.0" y="1620" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">## 5. Boundaries and Escalation</text>
+<rect x="731" y="1602" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="1628" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1646" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">36</text>
+<rect x="731" y="1628" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="1654" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1672" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">37</text>
+<text x="96.0" y="1672" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">### Ask First</text>
+<rect x="731" y="1654" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="1680" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1698" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">38</text>
+<rect x="731" y="1680" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="1706" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1724" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">39</text>
+<text x="96.0" y="1724" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- Introducing a new dependency.</text>
+<rect x="731" y="1706" width="668" height="26" fill="#161b22"/>
+<rect x="41" y="1732" width="668" height="26" fill="#2d1215"/>
+<text x="74" y="1750" text-anchor="end" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">40</text>
+<text x="96.0" y="1750" fill="#f85149" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">- Relaxing lint rules.</text>
+<rect x="731" y="1732" width="668" height="26" fill="#161b22"/>
+</svg>

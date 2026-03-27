@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="803" viewBox="0 0 920 803" role="img" aria-labelledby="title desc">
+<title id="title">Audit Output</title>
+<desc id="desc">Styled audit output from a real eval run.</desc>
+<rect width="920" height="803" fill="#0d1117" rx="10"/>
+<text x="28" y="34" fill="#58a6ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="700">Audit Summary</text>
+<text x="28" y="68" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">Cold-start ready: yes</text>
+<text x="28" y="94" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">Instruction files: AGENTS.md (37 lines)</text>
+<text x="28" y="120" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">Repo tier: small</text>
+<text x="28" y="146" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">Passes completed: 1</text>
+<text x="28" y="172" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">Enforcement sustainability: partially enforced</text>
+<text x="28" y="208" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700">Fixes Applied</text>
+<text x="40" y="234" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">• Replaced generic Go-template commands in AGENTS.md with the repo-backed verification contract from</text>
+<text x="56" y="254" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">.pre-commit-config.yaml.</text>
+<text x="40" y="278" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">• Removed stale or unverified instructions: go install ./..., golangci-lint run, branch naming rules, and</text>
+<text x="56" y="298" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">commit-format policy that were not grounded in repo artifacts.</text>
+<text x="40" y="322" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">• Added a fenced command block with verified runnable commands: gofmt -w ., go test ./..., and go vet</text>
+<text x="56" y="342" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">./....</text>
+<text x="40" y="366" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">• Added explicit approval boundaries for dependency changes, verification-rule changes, destructive git</text>
+<text x="56" y="386" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">actions, networked actions, and externally visible changes.</text>
+<text x="40" y="410" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">• Added concrete key paths tied to actual repo roles: verification source, module manifest, production</text>
+<text x="56" y="430" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">code, and test file.</text>
+<text x="40" y="454" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">• Replaced the vague definition of done with a deterministic done-when checklist.</text>
+<text x="40" y="478" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">• Added a self-improving rule to persist non-obvious repo-wide workflow corrections back into AGENTS.md.</text>
+<text x="28" y="512" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700">Remaining Issues</text>
+<text x="40" y="538" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">• No CI workflow is present, so instruction accuracy is only partially enforced by local hooks.</text>
+<text x="40" y="562" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">• Source-control workflow remains unverified because this workspace is not a git checkout.</text>
+<text x="28" y="596" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700">Rubric Scores (final)</text>
+<rect x="28" y="632" width="864" height="73" fill="#161b22" stroke="#30363d" rx="6"/>
+<rect x="28" y="632" width="864" height="24" fill="#1f2937" rx="6"/>
+<text x="38" y="647" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">Criterion</text>
+<text x="248" y="647" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">Score</text>
+<text x="398" y="647" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">Evidence</text>
+<line x1="28" y1="656" x2="892" y2="656" stroke="#30363d"/>
+<text x="38" y="671" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">Source Control</text>
+<text x="38" y="683" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">Workflow</text>
+<text x="248" y="671" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">Unverified</text>
+<text x="398" y="671" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">No .git metadata was available; prior branch/commit rules</text>
+<text x="398" y="683" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">in AGENTS.md were removed because they could not be</text>
+<text x="398" y="695" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">verified.</text>
+<text x="28" y="735" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">Verification: go test ./... passed and go vet ./... passed when run with a workspace-local GOCACHE because</text>
+<text x="28" y="755" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400">the sandbox blocks Go’s default cache path under the user home directory.</text>
+</svg>
