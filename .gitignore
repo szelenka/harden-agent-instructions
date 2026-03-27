@@ -1,0 +1,31 @@
+.DS_Store
+
+# Python cache
+**/__pycache__/
+/**/.pytest_cache/
+/**/.mypy_cache/
+/**/.ruff_cache/
+/**/*.egg-info/
+
+tests/eval/results.md
+tests/eval/assets/
+tests/eval/runs/
+
+# Local Claude Code settings
+.claude/
+!.claude/skills
+!.claude/skills/harden-agent-instructions/
+!.claude/skills/harden-agent-instructions/SKILL.md
+
+# Fixture build artifacts
+tests/fixtures/**/.git/
+tests/fixtures/**/.venv/
+tests/fixtures/**/node_modules/
+tests/fixtures/**/dist/
+tests/fixtures/**/build/
+tests/fixtures/**/package-lock.json
+tests/fixtures/**/target/
+
+# Local research fetch cache
+docs/plans
+docs/research
