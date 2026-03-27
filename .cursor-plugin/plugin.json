@@ -1,0 +1,14 @@
+{
+  "name": "harden-agent-instructions",
+  "displayName": "Harden Instructions",
+  "description": "Audits and iteratively improves agent instruction files (AGENTS.md open standard, plus tool-specific variants like CLAUDE.md, .cursorrules, copilot-instructions.md, codex instructions) for any repository",
+  "version": "1.0.0",
+  "author": {
+    "name": "szelenka"
+  },
+  "homepage": "https://github.com/szelenka/harden-agent-instructions",
+  "repository": "https://github.com/szelenka/harden-agent-instructions",
+  "license": "MIT",
+  "keywords": ["skills", "instructions", "agents", "audit", "hardening"],
+  "skills": "../skills/"
+}

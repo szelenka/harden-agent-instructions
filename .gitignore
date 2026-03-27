@@ -13,9 +13,6 @@ tests/eval/runs/
 
 # Local Claude Code settings
 .claude/
-!.claude/skills
-!.claude/skills/harden-agent-instructions/
-!.claude/skills/harden-agent-instructions/SKILL.md
 
 # Fixture build artifacts
 tests/fixtures/**/.git/
