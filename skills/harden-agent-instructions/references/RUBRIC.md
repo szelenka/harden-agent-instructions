@@ -77,6 +77,7 @@ Apply these thresholds consistently:
 - Look for: wrapper commands (Makefile targets, tox envs, npm scripts) verified via dry-run to confirm underlying binaries are present — not just the wrapper itself
 - Look for: dependency compatibility verified against the project's runtime and framework versions (`engines`, `python_requires`, peer dependency ranges) and against lock files — hallucinated or incompatible versions block bootstrapping
 - Anti-pattern: commands extracted from manifests without verifying the binary exists — e.g., writing `pio run` when `pio` is not installed
+- Anti-pattern: substituting inference or sampling for a mechanical search — e.g., checking a few directories and extrapolating instead of running the glob/pattern the user provided or the discovery step requires; partial enumeration presented as complete results
 
 **Instruction Salience**
 - Look for: hard rules in the first 30 lines, strong emphasis, quick-start before reference material, descending impact order

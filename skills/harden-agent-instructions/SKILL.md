@@ -9,6 +9,8 @@ description: Audits and iteratively improves agent instruction files (AGENTS.md 
 
 - Verify repo facts before judging instructions. Do not assume paths, commands, CI jobs, hooks, or contributors.
 - Treat the build system, CI config, and enforcement hooks as the source of truth. Instructions must match them.
+- When discovery requires enumerating files, matching patterns, or listing targets, execute the search literally and report all matches. Do not sample, estimate, or substitute judgment for mechanical inspection. Creative discretion applies to what you do with the results, not to whether you collect them.
+- Do not create files, directories, command patterns, or verification workflows that do not already exist in the repo unless the user explicitly approves. Extend and adapt what the repo already has. "Split references" means split into a file you create for instruction content, not invent new repo conventions.
 - Fix cold-start blockers first: missing runnable commands, stale paths, missing key entry points, or nonexistent verification steps.
 - Default to single-agent execution.
 - Fewer high-impact instructions outperform comprehensive coverage. Prefer focused over complete. Split reference-heavy material into secondary files when the repo tier needs it.
