@@ -215,7 +215,7 @@ When creating instructions from scratch, write sections in this order until you 
 2. Build, test, and lint commands in fenced code blocks
 3. Non-obvious entry points, structural traps, and wrong-layer risks only when they change agent behavior
 4. Dependency management: repo-grounded library preference, version verification, compatibility constraints
-5. Done-when checklist with quality-oriented completion signals
+5. Done-when checklist with quality-oriented completion signals — when the repo involves parsing, transforms, or data conversion, include completion gates that catch single-case implementations (e.g., tests must cover 3+ input variations per transform, use format-complete libraries instead of sample-fitted logic)
 6. Testing conventions, naming conventions, and codebase conventions as needed
 
 Before adding content, apply the discoverability test:
